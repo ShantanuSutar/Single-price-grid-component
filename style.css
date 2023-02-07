@@ -72,6 +72,11 @@ body {
   font-family: "Karla", sans-serif;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.left .btn:hover {
+  background-color: white;
+  color: var(--Bright-Yellow);
 }
 
 .right {
