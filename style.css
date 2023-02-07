@@ -1,0 +1,125 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-Gray);
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+}
+
+.top {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+.top h3 {
+  color: var(--Cyan);
+  padding-top: 10px;
+}
+.top .sub-heading {
+  color: var(--Bright-Yellow);
+  margin: 18px 0;
+  font-weight: bold;
+}
+.top p {
+  color: var(--Grayish-Blue);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.left {
+  background-color: var(--Cyan);
+  color: white;
+}
+.left h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.left .dollar {
+  font-size: 30px;
+}
+.left .per-month {
+  color: var(--Light-Gray);
+}
+.left .access {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.left .btn {
+  background-color: var(--Bright-Yellow);
+  border: 2px white;
+  color: white;
+  font-size: 15px;
+  padding: 1rem 7.2rem;
+  border-radius: 6px;
+  font-family: "Karla", sans-serif;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.right {
+  background-color: hsl(179, 55%, 61%);
+  border-radius: 0 0 10px 10px;
+}
+.right h3 {
+  color: white;
+  font-weight: bold;
+}
+.right p {
+  padding-top: 15px;
+}
+.right article {
+  color: hsl(203, 72%, 92%);
+  line-height: 1.5;
+}
+
+.container {
+  padding: 25px;
+  margin-top: 30px;
+  min-width: 375px;
+}
+
+.card {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 700px;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .container section {
+    display: flex;
+    flex-direction: row;
+  }
+  .container .left {
+    border-radius: 0 0 0 10px;
+    flex: 1;
+  }
+  .container .right {
+    border-radius: 0 0 10px 0;
+    flex: 1;
+  }
+}
